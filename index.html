@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,172 +9,120 @@
     <title>Mangramej Porfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="src/output.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
-<body class="bg-gray-800">
-    <div class="mx-auto w-full p-8 sm:w-3/4 mt-8">
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <nav class="flex justify-end">
+            <ul class="flex gap-8">
+                <li class="p-4 text-gray-600 border-b-4 border-gray-100 hover:text-gray-800 hover:border-b-4 hover:border-sky-600 transition ease">
+                    <a class="text-xl sm:text-3xl" href="#projects">Projects</a>
+                </li>
+                <li class="p-4 text-gray-600 border-b-4 border-gray-100 hover:text-gray-800 hover:border-b-4 hover:border-sky-600 transition ease">
+                    <a class="text-xl sm:text-3xl" href="#contacts">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-        <section>
-            <h1 class="text-3xl sm:text-5xl font-bold uppercase text-cyan-300">Jemar Sabocido</h1>
-            <span class="text-gray-100 text-sm sm:text-xl uppercase">
-                Caloocan City, Philippines
-                |
-                sabocidojemar@gmail.com
-            </span>
+        <section class="mt-16">
+                <div class="flex flex-col sm:flex-row text-start sm:items-end sm:gap-4">
+                    <span class="text-2xl sm:text-3xl text-gray-400">Hi, I'am</span>
+                    <span class="text-6xl font-semibold text-sky-600">Jemar Sabocido</span>
+                </div>
 
+                <p class="py-6 text-gray-600 text-lg leading-loose text-justify">
+                    I am IT student at Our Lady of Fatima University, my primary focus is on web development, particularly back-end development using the Laravel framework. I have a passion for learning about the latest technologies and trends in this field, and I am constantly seeking out new opportunities to expand my knowledge and skills. 
+                </p>
+                <!-- <button class="btn btn-primary">Get Started</button> -->
+        </section>
 
-            <p class="mt-12 text-normal sm:text-lg text-gray-300 sm:w-[800px]">
-                Hi, I am 3rd year IT student at Our Lady of Fatima University, my primary focus is on web
-                development, particularly back-end development using the Laravel framework. I have a passion for
-                learning about the latest technologies and trends in this field, and I am constantly seeking out
-                new opportunities to expand my knowledge and skills.
-            </p>
+        <div class="mockup-code">
+            <pre data-prefix=">"><code>sabocido.my_address</code></pre> 
+            <pre data-prefix="~" class="bg-info text-info-content"><code>"Caloocan City, PH"</code></pre>
+            <pre></pre>
+            <pre data-prefix=">"><code>sabocido.my_education</code></pre> 
+            <pre data-prefix="~" class="bg-info text-info-content"><code>"B.S. Information Technology - OLFU Q.C."</code></pre>
+            <pre></pre>
+            <pre data-prefix=">"><code>sabocido.my_skills</code></pre> 
+            <pre data-prefix="~" class="bg-info text-info-content"><code>["php", "js", "git", "Laravel"]</code></pre>
+            <pre></pre>
+            <pre data-prefix=">"><code>sabocido.my_hobbies</code></pre> 
+            <pre data-prefix="~" class="bg-info text-info-content"><code>"I just coding stuff lol."</code></pre>
+        </div>
 
-            <div class="flex justify-start mt-8 gap-4">
-                <a href="https://www.facebook.com/mangramej/">
+        <section class="mt-16 text-center">
+            <h1 class="text-5xl font-bold" id="projects">Projects</h1>
+        </section>
 
-                    <div class="text-white bg-gray-900 hover:bg-gray-700 p-4 rounded-full ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-facebook" viewBox="0 0 16 16">
+        
+        <section class="mt-8 space-y-8">
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="border-b-2"><img src="./img/breast-milk-management-page.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Breast Milk Management</h2>
+                  <p>A information/inventory management web application for mothers to be able to request a breast milk bag with ease, and for pediatrician; this serve as a plaform for processing breast milk request and managing breast milk bags. </p>
+                  <div class="card-actions justify-end">
+                    <a href="https://github.com/mangramej/capstone" class="btn btn-info text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
                             <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
+                        <span>View source code</span>
+                    </a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="border-b-2"><img src="./img/evaz-essentials-page.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">EvazEssential - Ecommerce</h2>
+                  <p>A simple e-commerce web app.</p>
+                  <div class="card-actions justify-end">
+                    <a href="https://github.com/mangramej/EvazEssentials" class="btn btn-info text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        <span>View source code</span>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h1 class="text-5xl font-bold" id="contacts">Contacts</h1>
+        </section>
+
+        <section class="mt-8">
+            <div class="flex flex-col md:flex-row justify-center mt-8 gap-4">
+                <a href="https://www.facebook.com/mangramej/">
+                    <div class="flex justify-center items-center gap-2 bg-sky-600 text-white hover:bg-sky-700 p-4 rounded-full ">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="text-sm">facebook.com/mangramej</span>
                     </div>
                 </a>
 
 
                 <a href="https://www.github.com/mangramej">
-                    <div class="text-white bg-gray-900 hover:bg-gray-700 p-4 rounded-full ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-github" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
+                    <div class="flex justify-center gap-2 items-center text-white bg-sky-600 hover:bg-sky-700 p-4 rounded-full ">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        <span class="text-sm">github.com/mangramej</span>
                     </div>
                 </a>
 
-            </div>
-        </section>
-
-        <hr class="mt-12 border border-gray-200">
-
-        <section class="mt-12">
-            <span class="text-gray-100 font-bold text-2xl uppercase">
-                My Projects
-            </span>
-
-            <div class="mt-8 uppercase">
-                <span class="text-gray-300 font-bold">
-                    Comming soon . . .
-                </span>
-                <br>
-                
-            </div>
-
-        </section>
-
-
-        <hr class="mt-12 border border-gray-200">
-
-        <section class="mt-12">
-            <span class="text-gray-100 font-bold text-2xl uppercase">
-                My Education
-            </span>
-
-            <div class="mt-8 uppercase">
-                <span class="text-gray-100 font-bold">
-                    Our Lady Of Fatima University (QC Campus)
-                </span>
-                <br>
-                <p class="text-slate-300">
-                    Bachelor of Science in Information Technology
-                </p>
-                <p class="mt-8 text-sm font-bold text-gray-300">
-                    2019 - Present
-                </p>
-            </div>
-
-            <div class="mt-8 uppercase">
-                <span class="text-gray-100 font-bold">
-                    Palompon Institute of Technology
-                </span>
-                <br>
-                <p class="text-slate-300">
-                    Senior High School
-                </p>
-                <span class="text-slate-300">
-                    Information Communication Technology
-                </span>
-                <p class="mt-8 text-sm font-bold text-gray-300">
-                    2017 - 2019
-                </p>
-            </div>
-
-            <div class="mt-8 uppercase">
-                <span class="text-gray-100 font-bold">
-                    Cielito Zamora High School
-                </span>
-                <br>
-                <p class="text-slate-300">
-                    Junior High School
-                </p>
-                <p class="mt-8 text-sm font-bold text-gray-300">
-                    2013 - 2017
-                </p>
-            </div>
-        </section>
-
-        <hr class="mt-12 border border-gray-200">
-
-        <section class="mt-12">
-            <span class="text-gray-100 font-bold text-2xl uppercase">
-                My Tech Stack
-            </span>
-
-            <div class="mt-8">
-                <span class="text-gray-300 uppercase">
-                    Programming Languages
-                </span>
-
-                <div class="flex justify-start mt-4 gap-4" style="font-size: 40px;color: white">
-                    <i class="devicon-php-plain"></i>
-                    <i class="devicon-python-plain"></i>
-                    <i class="devicon-javascript-plain"></i>
-                </div>
-            </div>
-
-            <div class="mt-8">
-                <span class="text-gray-300 uppercase">
-                    Web Development
-                </span>
-
-                <div class="flex flex-wrap justify-start mt-4 gap-4" style="font-size: 40px;color: white">
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-vuejs-plain"></i>
-                    <i class="devicon-tailwindcss-plain"></i>
-                    <i class="devicon-bootstrap-plain"></i>
-                    <i class="devicon-nodejs-plain"></i>
-                    <i class="devicon-laravel-plain"></i>
-                    <i class="devicon-flask-original"></i>
-                    <i class="devicon-mysql-plain-wordmark"></i>
-                </div>
-            </div>
-
-            <div class="mt-8">
-                <span class="text-gray-300 uppercase">
-                    Tools
-                </span>
-
-                <div class="flex justify-start mt-4 gap-4" style="font-size: 40px;color: white">
-                    <i class="devicon-git-plain"></i>
-                    <i class="devicon-jetbrains-plain"></i>
-                    <i class="devicon-vscode-plain"></i>
-                    <i class="devicon-npm-original-wordmark"></i>
-                    <i class="devicon-composer-line"></i>
-                </div>
+                <a href="mailto:sabocidojemar@gmail.com">
+                    <div class="flex justify-center items-center gap-2 text-white bg-sky-600 hover:bg-sky-700 p-4 rounded-full ">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M7 9L12 12.5L17 9" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="#FFFFFF" stroke-width="1.5"></path></svg>
+                        <span class="text-sm">sabocidojemar@gmail.com</span>
+                    </div>
+                </a>
             </div>
         </section>
     </div>
